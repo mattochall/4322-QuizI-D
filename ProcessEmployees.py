@@ -18,7 +18,7 @@ next(employeedata)
 
 # create an empty dictionary
 
-employeedict = {}
+employeedictionary = {}
 
 
 # use a loop to iterate through the csv file
@@ -32,7 +32,7 @@ for item in employeedata:
 
         print(f"Manager Name: {FullName} Current Salary: ${(CurrentSalary):,.2f}")
 
-        employeedict[f"{FullName}"] = (
+        employeedictionary[f"{FullName}"] = (
             CurrentSalary * 1.10
         )  # assigns new salary to the Full Name key
 
@@ -43,5 +43,5 @@ print()
 # iternate through the dictionary and print out the key and value as per printout
 
 
-for key, value in employeedict.items():
+for key, value in employeedictionary.items():
     print(f"Manager Name: {key} New Salary: ${value:,.2f}")
